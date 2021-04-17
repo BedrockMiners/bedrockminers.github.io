@@ -7,6 +7,15 @@
 		<script src="https://kit.fontawesome.com/cc60436b68.js" crossorigin="anonymous"></script>
 	</head>
 
+<script>
+	const fetch = require('node-fetch');
+async function players() {
+	const json = await fetch(`http://api.playerservers.com/server/BedrockMiners`).then((res) => res.json());
+  const playerCount = json.server.onlinePlayers //done
+}
+	const players = document.GetElementById("sumshit").innerHTML = "something"
+</script>
+
 <div class="navbar">
 	BedrockMiners
 </div>
@@ -22,9 +31,9 @@
 			<a href="about:blank" onclick=""><i class="fab fa-discord"></i></a>
 		</h4>
 
-<script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
-
-There are <span data-playercounter-ip="mc.hypixel.net">0</span> players on Hypixel right now.
+<p id="sumshit">
+hello bois
+</p>
 
 
 	</center>
