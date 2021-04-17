@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="main.js">
+		<script src="https://kit.fontawesome.com/cc60436b68.js" crossorigin="anonymous"></script>
+	</head>
+
+<script>
+	const fetch = require('node-fetch');
+async function players() {
+	const json = await fetch(`http://api.playerservers.com/server/BedrockMiners`).then((res) => res.json());
+  const playerCount = json.server.onlinePlayers //done
+}
+	const players = document.GetElementById("sumshit").innerHTML = "something"
+</script>
+
+<div class="navbar">
+	BedrockMiners
+</div>
+
+<div class="centercont">
+	<center>
+		<h1>Welcome to BedrockMiners</h1>
+		<h3>IP | bedrockminers.playerservers.com</h3>
+
+    <div id="hello"></div>
+
+		<h4>
+			<a href="about:blank" onclick=""><i class="fab fa-discord"></i></a>
+		</h4>
+
+<p id="sumshit">
+hello bois
+</p>
+
+
+	</center>
+</div>
+
+	<iframe src ="https://bedrockminers.blogspot.com/" width="50%" height="500" class="blog"></iframe>
+
+
+<!-- BLUE CURSOR: Aspiired
+// PINK CURSOR: Stormzys Monke
+// GREEN CURSOR: BlockArchitech
+-->
+</html>
